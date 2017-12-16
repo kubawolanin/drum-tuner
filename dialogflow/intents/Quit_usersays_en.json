@@ -1,0 +1,74 @@
+[
+  {
+    "id": "32b3869e-70cd-42e2-9774-137c08eeb0bc",
+    "data": [
+      {
+        "text": "exit",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1512651111
+  },
+  {
+    "id": "2c68f9f8-ae06-41b6-9255-10c70c730752",
+    "data": [
+      {
+        "text": "stop",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1512651111
+  },
+  {
+    "id": "da9d5cbe-232d-4aef-8acf-b6240176c788",
+    "data": [
+      {
+        "text": "quit",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1512651111
+  },
+  {
+    "id": "6ad054f6-663d-40b4-8f85-074d6dec50e7",
+    "data": [
+      {
+        "text": "bye Drum Tuner",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1512651111
+  },
+  {
+    "id": "ddb9f3b7-a69c-431f-ae1f-be9ef1ae3214",
+    "data": [
+      {
+        "text": "bye",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1512651111
+  },
+  {
+    "id": "cc1da35f-e99a-4dd8-bcfd-bd3ed54cdaff",
+    "data": [
+      {
+        "text": "thanks",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1512651111
+  }
+]

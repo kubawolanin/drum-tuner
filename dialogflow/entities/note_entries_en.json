@@ -1,0 +1,89 @@
+[
+  {
+    "value": "C",
+    "synonyms": [
+      "C"
+    ]
+  },
+  {
+    "value": "C#",
+    "synonyms": [
+      "C#",
+      "C sharp",
+      "Db",
+      "D flat"
+    ]
+  },
+  {
+    "value": "D",
+    "synonyms": [
+      "D"
+    ]
+  },
+  {
+    "value": "D#",
+    "synonyms": [
+      "D#",
+      "D sharp",
+      "Eb",
+      "E flat"
+    ]
+  },
+  {
+    "value": "E",
+    "synonyms": [
+      "E"
+    ]
+  },
+  {
+    "value": "F",
+    "synonyms": [
+      "F"
+    ]
+  },
+  {
+    "value": "F#",
+    "synonyms": [
+      "F#",
+      "F sharp",
+      "Gb",
+      "G flat"
+    ]
+  },
+  {
+    "value": "G",
+    "synonyms": [
+      "G"
+    ]
+  },
+  {
+    "value": "G#",
+    "synonyms": [
+      "G#",
+      "G sharp",
+      "Ab",
+      "A flat"
+    ]
+  },
+  {
+    "value": "A",
+    "synonyms": [
+      "A"
+    ]
+  },
+  {
+    "value": "A#",
+    "synonyms": [
+      "A#",
+      "A sharp",
+      "Bb",
+      "B flat"
+    ]
+  },
+  {
+    "value": "B",
+    "synonyms": [
+      "B"
+    ]
+  }
+]
