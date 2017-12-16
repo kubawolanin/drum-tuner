@@ -60,7 +60,7 @@
             }
           ],
           "defaultValue": "snare",
-          "isList": false
+          "isList": true
         },
         {
           "id": "87349fa8-40ae-4604-9175-23f55069b7f7",

@@ -1,6 +1,6 @@
 'use strict';
 
-const { normalizeNotes } = require('./utils');
+const { normalizeNotes } = require('./music');
 
 class DrumTuning {
   constructor(batter, resonant, size) {
@@ -280,7 +280,6 @@ class Drum {
   constructor() {
     this.type = '';
     this.fundamental = '';
-    this.size = 14;
   }
 
   fromFundamental(type, fundamental) {
@@ -326,7 +325,7 @@ class Drum {
     let reso = this.resonant;
     let note = this.fundamental.replace(/#/g, '%23');
 
-    return `${DRUMS_IMAGE_ENDPOINT}?background=true&&drums=${drum}&batters=${batter}&resos=${reso}&notes=${note}`;
+    return `${DRUMS_IMAGE_ENDPOINT}?background=true&drums=${drum}&batters=${batter}&resos=${reso}&notes=${note}`;
   }
 }
 

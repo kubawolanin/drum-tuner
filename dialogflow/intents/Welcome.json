@@ -1,5 +1,4 @@
 {
-  "userSays": [],
   "id": "2ecf2164-0fe1-45e1-b29f-91210c3394d1",
   "name": "Welcome",
   "auto": true,
@@ -13,11 +12,11 @@
       "messages": [
         {
           "type": "suggestion_chips",
-          "lang": "en",
           "platform": "google",
+          "lang": "en",
           "suggestions": [
             {
-              "title": "Tune my bass drum"
+              "title": "History"
             },
             {
               "title": "Headquarters"
@@ -37,7 +36,8 @@
       ],
       "defaultResponsePlatforms": {
         "google": true
-      }
+      },
+      "speech": []
     }
   ],
   "priority": 500000,

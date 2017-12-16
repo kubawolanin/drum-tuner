@@ -16,8 +16,8 @@ const DEBUG_LOGS = true;
 /** Dialogflow Actions {@link https://dialogflow.com/docs/actions-and-parameters#actions} */
 const Actions = {
   UNRECOGNIZED_DEEP_LINK: 'deeplink.unknown',
-  TUNE_DRUM: 'tune-drum',
-  TELL_TIPS: 'tell-tips',
+  TUNE_DRUM: 'tune.drum',
+  TELL_TIPS: 'tell.tips',
   REPEAT: 'repeat'
 };
 /** Dialogflow Parameters {@link https://dialogflow.com/docs/actions-and-parameters#parameters} */
@@ -94,6 +94,12 @@ const initData = app => {
       cats: null
     };
   }
+
+  if (!data.tuning) {
+    data.tuning = {
+      content: {}
+    };
+  }
   return data;
 };
 
@@ -121,14 +127,19 @@ const noTipsLeft = (app, currentCategory, redirectCategory) => {
 
 const tuneDrum = app => {
   const strings = localizedStrings[app.getUserLocale()] || localizedStrings[DEFAULT_LOCALE];
+  const data = initData(app);
+  // const tuning = data.tuning.content;
+
   const drumType = app.getArgument('drum-type');
   const drumSizes = app.getArgument('drum-sizes');
-  // const drumCount = app.getArgument('number');
+  const drumCount = app.getArgument('drum-count');
   // const resonance = app.getArgument('resonance');
   // const tuningStyle = app.getArgument('tuning-style');
   const fundamental = app.getArgument('note');
 
   if (DEBUG_LOGS) {
+    console.log('Received data', data);
+    console.log('drumCount', drumCount);
     console.log('Received parameters', drumType, fundamental);
   }
 
@@ -151,6 +162,7 @@ const tuneDrum = app => {
 
       let verbalResponse = sprintf(
         strings.tuning.drum,
+        drumType,
         drum.getBatterLugFreq(),
         drum.getResonantLugFreq(),
         drum.getFundamental()
@@ -161,7 +173,11 @@ const tuneDrum = app => {
         .addSimpleResponse(verbalResponse)
         .addBasicCard(
           app.buildBasicCard(
-            sprintf(strings.tuning.lugs, drum.getBatterLugFreq(), drum.getResonantLugFreq())
+            sprintf(strings.tuning.lugs,
+              drumType,
+              drum.getBatterLugFreq(),
+              drum.getResonantLugFreq()
+            )
           )
           .setImage(drum.getImageUrl(), `${drum.getFundamental()}`)
         )
@@ -343,7 +359,7 @@ const drumsImage = functions.https.onRequest((request, response) => {
   const battersString = request.query.batters;
   const resosString = request.query.resos;
   const notesString = request.query.notes;
-
+  // TODO: Refactor
   if (drumsString === undefined || drumsString.length === 0 ||
     battersString === undefined || battersString.length === 0 ||
     resosString === undefined || resosString.length === 0 ||

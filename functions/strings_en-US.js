@@ -30,8 +30,8 @@ const categories = [
 
 const tuning = {
   "toms": "Your toms will be tuned as %s",
-  "drum": "Tune the batter lugs to %s Hz and resonant lugs to %s Hz. The fundamental note should be %s.",
-  "lugs": "Batter lug: %s Hz, Resonant lug: %s Hz",
+  "drum": "Tune the batter lugs of your %s to %s Hz and resonant lugs to %s Hz. The fundamental note should be %s.",
+  "lugs": "Here's the tuning set up for the %s. Batter lug: %s Hz, Resonant lug: %s Hz",
   "note": "What's the desired note for your %s?"
 };
 
@@ -64,9 +64,13 @@ const content = {
 const cats = {
   "suggestion": "Cats",
   "tips": [
-    "Cats are animals.",
-    "Cats have nine lives.",
-    "Cats descend from other cats."
+    "When you tune a drum, it\u0027s good to use two drum keys simultaneously.",
+    "When seating the bass drum head, it\u0027s a good practice to stretch it out before tuning.",
+    "When tuning the front head, increase tension in very small increments. Try using a quarter or a half of a turn at a time, no more.",
+    "Whatever style and sound you are trying to achieve, generally a drum will sound best if the batter head is tuned lower (slacker) than the resonant head.",
+    "If you find the overall pitch too low, go back to the bottom head and take it up another pitch level, return to tuning the top head and it will come back into tune with the bottom after a few turns of the rods.",
+    "Whenever detuning or loosening a rod, always end the movement with a slight re-tightening. This enables the rod to \u0027bite\u0027 and hold while getting the others sorted.",
+    "Try using a stool as your tuning base. It\u0027s a great way to dampen the batter head while working on the resonant head and you can (normally) spin the drum round as you go."
   ],
   "images": [
     [

@@ -2,7 +2,11 @@
   {
     "value": "C",
     "synonyms": [
-      "C"
+      "C",
+      "B#",
+      "B hash",
+      "B sharp",
+      "see"
     ]
   },
   {
@@ -11,13 +15,16 @@
       "C#",
       "C sharp",
       "Db",
-      "D flat"
+      "D flat",
+      "C hash",
+      "see sharp"
     ]
   },
   {
     "value": "D",
     "synonyms": [
-      "D"
+      "D",
+      "dee"
     ]
   },
   {
@@ -26,19 +33,25 @@
       "D#",
       "D sharp",
       "Eb",
-      "E flat"
+      "E flat",
+      "D hash",
+      "dee sharp"
     ]
   },
   {
     "value": "E",
     "synonyms": [
-      "E"
+      "E",
+      "F flat",
+      "Fb"
     ]
   },
   {
     "value": "F",
     "synonyms": [
-      "F"
+      "F",
+      "E sharp",
+      "E hash"
     ]
   },
   {
@@ -47,13 +60,15 @@
       "F#",
       "F sharp",
       "Gb",
-      "G flat"
+      "G flat",
+      "F hash"
     ]
   },
   {
     "value": "G",
     "synonyms": [
-      "G"
+      "G",
+      "g"
     ]
   },
   {
@@ -62,13 +77,15 @@
       "G#",
       "G sharp",
       "Ab",
-      "A flat"
+      "A flat",
+      "G hash"
     ]
   },
   {
     "value": "A",
     "synonyms": [
-      "A"
+      "A",
+      "a"
     ]
   },
   {
@@ -77,13 +94,18 @@
       "A#",
       "A sharp",
       "Bb",
-      "B flat"
+      "B flat",
+      "A hash"
     ]
   },
   {
     "value": "B",
     "synonyms": [
-      "B"
+      "B",
+      "C flat",
+      "Cb",
+      "be",
+      "bee"
     ]
   }
 ]

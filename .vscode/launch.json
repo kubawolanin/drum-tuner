@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/functions\\utils.js"
+            "program": "${workspaceFolder}/functions\\music.js"
         }
     ]
 }
