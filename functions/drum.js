@@ -206,29 +206,30 @@ function calculateNotes(sizes) {
 
 class Toms {
   constructor(sizes) {
+    let headHigher = false;
+
     this.sizes = sizes;
     this.resonance = 1; // 0 is low 3 is max
     this.pitchTranspose = 3; // 3 is default or medium
-    this.headHigher = false;
 
     this.batters = [];
     this.resos = [];
     this.notes = [];
 
-    let Q = setQ(this.headHigher, this.resonance);
+    let Q = setQ(headHigher, this.resonance);
     let noteFreqs = setNoteFreqs();
     let fo = calculateNotes(this.sizes);
 
+    let result = [];
     const letters = [0, 0, 1, 1, 2, 3, 3, 4, 4, 5, 5, 6];
     const scale = ['C', 'D', 'E', 'F', 'G', 'A', 'B'];
     const sharps = ['', '#', '', '#', '', '', '#', '', '#', '', '#', ''];
 
-    let result = [];
 
     sizes.forEach((tom, i) => {
       let fundamental = noteFreqs[fo[i]];
-      let batter = headFreq(this.headHigher ? 1 : -1, fundamental, Q);
-      let resonant = headFreq(this.headHigher ? -1 : 1, fundamental, Q);
+      let batter = headFreq(headHigher ? 1 : -1, fundamental, Q);
+      let resonant = headFreq(headHigher ? -1 : 1, fundamental, Q);
 
       let octave = (fo[i] / 12) + 1;
       let note = fo[i] % 12;
