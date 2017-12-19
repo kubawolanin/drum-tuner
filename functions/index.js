@@ -182,8 +182,8 @@ const tuneDrum = app => {
           .setImage(drum.getImageUrl(), `${drum.getFundamental()}`)
         )
       );
-    } else {
-      ask(app, sprintf(strings.tuning.note, drumType));
+    // } else {
+    //   ask(app, sprintf(strings.tuning.note, drumType));
     }
   }
 };

@@ -216,15 +216,14 @@ class Toms {
     this.resos = [];
     this.notes = [];
 
-    let Q = setQ(headHigher, this.resonance);
-    let noteFreqs = setNoteFreqs();
-    let fo = calculateNotes(this.sizes);
+    const Q = setQ(headHigher, this.resonance);
+    const noteFreqs = setNoteFreqs();
+    const fo = calculateNotes(this.sizes);
 
     let result = [];
     const letters = [0, 0, 1, 1, 2, 3, 3, 4, 4, 5, 5, 6];
     const scale = ['C', 'D', 'E', 'F', 'G', 'A', 'B'];
     const sharps = ['', '#', '', '#', '', '', '#', '', '#', '', '#', ''];
-
 
     sizes.forEach((tom, i) => {
       let fundamental = noteFreqs[fo[i]];
