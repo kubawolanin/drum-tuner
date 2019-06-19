@@ -7,7 +7,7 @@ const scale = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
  * @param {number} pitch - negative or positive number determining a target note.
  */
 function transpose(note, pitch) {
-  let index = scale.indexOf(normalizeNotes(note)) + (Math.round(pitch || 0) % 12);
+  let index = (scale.indexOf(normalizeNotes(note)) + Math.round(pitch || 0) % 12);
   return scale[index < 0 ? scale.length + index : index];
 }
 
